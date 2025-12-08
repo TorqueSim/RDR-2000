@@ -187,6 +187,9 @@ typedef struct rds81_t {
     
     XPLMDataRef     dr_range_idx;
     XPLMDataRef     dr_range;
+    
+    // CJ525 customize
+    XPLMDataRef     dr_elec_sys_power;
         
     // UI elements
     knob_t          knobs[KNOB_COUNT];

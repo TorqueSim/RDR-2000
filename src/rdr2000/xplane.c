@@ -23,9 +23,9 @@
 #include <XPLMPlugin.h>
 #include <XPLMProcessing.h>
 
-#define PLUGIN_NAME         "Standalone Weather Radar"
-#define PLUGIN_SIG          "com.laminar.standalone-wxr"
-#define PLUGIN_DESCRIPTION  "RDS-81 standalone weather radar unit for GA"
+#define PLUGIN_NAME         "CJ525 RDR2000"
+#define PLUGIN_SIG          "torquesim.cj525.rdr2000"
+#define PLUGIN_DESCRIPTION  "RDS-81 weather radar for the TorqueSim CitationJet 525"
 #define MSG_ADD_DATAREF     0x01000000
 
 

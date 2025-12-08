@@ -437,7 +437,7 @@ void rds81_init(rds81_side_t side) {
     wxr->dr_range_idx = find_dr_safe("sim/cockpit2/EFIS/map_range%s", side_str);
     wxr->dr_range = find_dr_safe("sim/cockpit2/EFIS/map_range_nm%s", side_str);
     
-    wxr->dr_elec_sys_power = find_dr_safe("afm/cj525/wx_rdr/power_on");
+    wxr->dr_elec_sys_power = NULL;
     
     // Bind our own commands
     XPLMRegisterCommandHandler(wxr_out.cmd_popup, handle_popup, 0, wxr);

@@ -119,7 +119,14 @@ void rds81_reset_datarefs(rds81_t *wxr) {
 }
 
 bool rds81_has_power(rds81_t *wxr) {
-    if (XPLMGetDatai(wxr->dr_elec_sys_power) < 1) return 0;
+    if (wxr->dr_elec_sys_power == NULL) 
+    {
+        wxr->dr_elec_sys_power = XPLMFindDataRef("afm/cj/wx_rdr/power_on");
+    }
+    else if (XPLMGetDatai(wxr->dr_elec_sys_power) < 1) 
+    {
+        return 0;
+    }
     float bus_ratio = XPLMGetAvionicsBusVoltsRatio(wxr->device);
     return bus_ratio < 0.f || XPLMGetDatai(wxr->dr_avionics_power) && bus_ratio > 0.8f;
 }

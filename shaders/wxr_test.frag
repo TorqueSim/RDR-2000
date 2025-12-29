@@ -11,10 +11,10 @@ layout(location = 0)    in vec2             tex_coord;
 layout(location = 0)    out vec4            out_color;
 
 #define TRANS       vec4(0.00, 0.00, 0.00, 1)
-#define GREEN       vec4(0, 1, 0.2, 1)
-#define YELLOW      vec4(1, 1, 0, 1)
+#define GREEN       vec4(0, 1, 0.5, 1)
+#define YELLOW      vec4(1, 1, 0.5, 1)
 #define RED         vec4(1, 0, 0, 1)
-#define MAGENTA     vec4(1, 0.5, 1, 1)
+#define MAGENTA     vec4(1, 0.8, 1, 1)
 
 
 vec4 colors[5] = { TRANS, GREEN, YELLOW, RED, MAGENTA };

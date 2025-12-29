@@ -43,7 +43,7 @@
 #define RDS_BEZEL_H         660
 
 #define RDS_WXR_BUF_W       (RDS_SCREEN_W/2.f)
-#define RDS_WXR_BUF_H       (RDS_SCREEN_H/2.f)
+#define RDS_WXR_BUF_H       (RDS_WXR_BUF_W / 1.4142135624f)
 
 #define RDS_SCREEN_OFF_X    192
 #define RDS_SCREEN_OFF_Y    100
